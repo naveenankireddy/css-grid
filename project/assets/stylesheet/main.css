@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* my css */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.6;  
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 32px;
+  font-weight: 100;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* header */
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+}
+.nav li {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.nav a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: grey;
+}
+.nav a:hover {
+  color: cyan;
+}
+.active a {
+  color: #ecaf4e;
+}
+.logo {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.logo h1 {
+  color: #555;
+  font-weight: 700;
+}
+/* section hero */
+
+.hero {
+  position: relative;
+  background: #f5e3d7;
+}
+.hero-image {
+  grid-column: span 2;
+}
+.hero-article {
+  grid-column: span 2;
+  padding: 180px 24px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #aea7a3;
+}
+
+.span {
+  font-weight: 700;
+}
+h2 {
+  font-size: 34px;
+  padding: 10px 0;
+}
+p {
+  color: #8a8787;
+  font-size: 16px;
+  padding: 6px 0;
+}
+.btn a {
+  font-size: 14px;
+  color: #555555;
+  text-transform: uppercase;
+  outline: 0;
+}
+.btn {
+  padding: 10px 32px;
+  border-radius: 50px;
+  border: 1px solid #777777;
+  margin-top: 40px;
+  font-weight: 700;
+}
+.btn:hover {
+  background-color: cyan;
+}
+/* about*/
+.about-article {
+  margin-bottom: 40px;
+  grid-column: span 2;
+  padding: 0 24px;
+}
+.about-text {
+  color: #f3cb8c;
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+.about-right {
+  background: #ecaf4e;
+  padding: 0 24px;
+}
+.about-right h2,
+.about-right p {
+  color: #ffffff;
+}
+.black {
+  background-color: #151515;
+}
+.border {
+  background: #ffffff;
+  margin-bottom: 16px;
+}
+.campus {
+  font-weight: 700;
+}
+/*media section */
+.media-col {
+  text-align: center;
+  padding: 32px 60px;
+  color: #ffffff;
+}
+.media-col h3 {
+  padding-top: 32px;
+}
+.fas,
+.fab {
+  font-size: 40px;
+}
+.interface {
+  background-color: #ecaf4e;
+}
+.stategy {
+  background: #ef663b;
+}
+.mobile {
+  background: #151515;
+}
+.media p {
+  color: #ffffff;
+}
+.coding,
+.coding p {
+  color: #151515;
+}
+/* experience */
+.exep {
+  grid-column: span 2;
+  background: #ef663b;
+  font-size: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.flex h3,
+.flex p {
+  margin-left: 28px;
+}
+.date {
+  font-size: 14px;
+  color: #151515;
+}
+.flex h3 {
+  font-size: 28px;
+}
+/* education */
+.education-col {
+  grid-column: span 2;
+  font-size: 0;
+}
+/* hello section */
+.hello-col-1 {
+  grid-column: span 2;
+  background: #ef663b;
+  padding-right: 24px;
+}
+.hello-col-2 {
+  background: #2c2b2b;
+}
+.input {
+  display: block;
+  font-size: 16px;
+  background: #ef663b;
+  margin: 24px;
+  border: 0;
+  border-bottom: 1px solid #ecaf4e;
+  width: 90%;
+  outline: 0;
+  padding-bottom: 8px;
+}
+.input::placeholder {
+  color: #ffffff;
+}
+.btn1 {
+  font-size: 18px;
+  outline: 0;
+  padding: 10px 50px;
+  margin-bottom: 32px;
+  margin-left: 30px;
+}
+.hello-right {
+  color: #ffffff;
+  padding: 32px;
+}
+.hello-right p {
+  margin-bottom: 50px;
+  color: #ecaf4e;
+}
+.hello-icon-1 {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 14px;
+  color: #777777;
+}
+.hello-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hello-icon p {
+  margin-bottom: 0;
+  margin-left: 12px;
+}
+/* map */
+.map {
+  padding: 40px 0;
+  background: #ef663b;
+  display: flex;
+  justify-content: center;
+}
+/* footer */
+.footer {
+  padding: 100px 0;
+  text-align: center;
+}
+.copyright a {
+  color: #ebb765;
+}
+.copyright {
+  color: black;
+}
+.footer-icon {
+  font-size: 20px;
+  padding-top: 32px;
+  margin: 0 16px;
+  color: orangered;
+}
+.footer-icon:hover {
+  color: cyan;
+}
+
+/* responsive media quarey*/
+@media all and (max-width: 760px) {
+  .logo {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .nav {
+    display: none;
+  }
+  .hero-image {
+    height: auto;
+    grid-column: span 4;
+  }
+  .hero-article {
+    grid-column: span 4;
+    padding: 32px 0;
+  }
+  .about-article {
+    grid-column: span 4;
+  }
+  .about-img {
+    grid-column: span 4;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .about-right {
+    grid-column: span 4;
+  }
+  .media-col {
+    grid-column: span 4;
+    margin: 12px 0;
+  }
+  .exep {
+    grid-column: span 4;
+    margin-bottom: 12px;
+  }
+  .education-col {
+    grid-column: span 4;
+    margin-bottom: 12px;
+  }
+  .hello-col-1,
+  .hello-col-2 {
+    grid-column: span 4;
+    margin-bottom: 12px;
+  }
+  .map {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .flex h3 {
+    font-size: 16px;
+  }
+  .flex p {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 44px 0;
+  }
+  
+ .btn1 {
+    padding: 10px 50px;
+  }
+}
